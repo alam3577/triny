@@ -20,7 +20,6 @@ class DialogScreen extends Component {
             <h2>List of Intents In An Agent</h2>
             {data.map((elem, index) => (
               <div key={index} className="indent">
-                <h1>Loading------</h1>
                 {elem.displayName}
               </div>
             ))}
