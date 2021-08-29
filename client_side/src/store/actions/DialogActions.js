@@ -14,11 +14,7 @@ const getDialog = () => {
       data: [],
     });
     try {
-      const res = await axios.get(
-        window.location.host.includes("localhost")
-          ? "http://localhost:3001"
-          : "https://dialog-assignment.herokuapp.com/",
-      );
+      const res = await axios.get("https://dialog-assignment.herokuapp.com/");
       console.log(res);
       const { data } = res;
       dispatch({
