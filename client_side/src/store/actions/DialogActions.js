@@ -14,7 +14,7 @@ const getDialog = () => {
       data: [],
     });
     try {
-      const res = await axios.get("http://localhost:3001/api/dialog");
+      const res = await axios.get("https://dialog-assignment.herokuapp.com");
       const { data } = res;
       dispatch({
         type: DIALOG_LOADING_SUCCESS,
